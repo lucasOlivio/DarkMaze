@@ -1,4 +1,4 @@
-# ![DARK MAZE](https://github.com/lucasOlivio/DarkMaze/blob/main/Docs/Image/tittle.png?raw=true)
+# ![DARK MAZE](https://github.com/lucasOlivio/DarkMaze/blob/main/Docs/Images/tittle.png?raw=true)
 
  ---
 
