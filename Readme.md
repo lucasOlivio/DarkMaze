@@ -1,6 +1,7 @@
 <!-- markdownlint-disable MD033 MD041 -->
 <img src="https://github.com/lucasOlivio/DarkMaze/blob/main/Docs/Images/tittle.png?raw=true" width="100%">
 
+![MIT-LICENSE](https://img.shields.io/github/license/lucasOlivio/DarkMaze) ![RELEASE](https://img.shields.io/github/v/release/lucasOlivio/DarkMaze) ![RELEASE](https://img.shields.io/github/repo-size/lucasOlivio/DarkMaze)
  ---
 
 Prepare yourself for entering the most terrifying maze, where lights don't got very far as the darkness is so dense that you almost have to push yourself ahead.
