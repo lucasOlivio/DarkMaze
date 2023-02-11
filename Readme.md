@@ -1,5 +1,5 @@
-<!-- markdownlint-disable MD033 -->
-# <img src="hhttps://github.com/lucasOlivio/DarkMaze/blob/main/Docs/Images/tittle.png?raw=true" width="1755" height="360">
+<!-- markdownlint-disable MD033 MD041 -->
+<img src="https://github.com/lucasOlivio/DarkMaze/blob/main/Docs/Images/tittle.png?raw=true" width="100%">
 
  ---
 
