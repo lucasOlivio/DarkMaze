@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "DarkMaze",
+			"Path": "D:\\Documentos\\DEV\\LozGamez\\DarkMaze\\DarkMaze\\Source\\DarkMaze.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "DarkMazeEditor",
+			"Path": "D:\\Documentos\\DEV\\LozGamez\\DarkMaze\\DarkMaze\\Source\\DarkMazeEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

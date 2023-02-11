@@ -1,0 +1,15 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\documentos\\dev\\lozgamez\\darkmaze\\darkmaze\\source\\darkmazecore\\private\\darkmazecore.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\documentos\\dev\\lozgamez\\darkmaze\\darkmaze\\intermediate\\build\\win64\\darkmazeeditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\documentos\\dev\\lozgamez\\darkmaze\\darkmaze\\intermediate\\build\\win64\\unrealeditor\\development\\darkmazecore\\definitions.darkmazecore.h",
+            "d:\\documentos\\dev\\lozgamez\\darkmaze\\darkmaze\\source\\darkmazecore\\public\\darkmazecore.h",
+            "d:\\documentos\\dev\\lozgamez\\darkmaze\\darkmaze\\source\\darkmazecore\\private\\log.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

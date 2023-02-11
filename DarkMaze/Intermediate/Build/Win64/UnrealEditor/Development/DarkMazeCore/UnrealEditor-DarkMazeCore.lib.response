@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-DarkMazeCore.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Documentos\DEV\LozGamez\DarkMaze\DarkMaze\Intermediate\Build\Win64\DarkMazeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.obj"
+"D:\Documentos\DEV\LozGamez\DarkMaze\DarkMaze\Intermediate\Build\Win64\UnrealEditor\Development\DarkMazeCore\DarkMazeCore.cpp.obj"
+"D:\Documentos\DEV\LozGamez\DarkMaze\DarkMaze\Intermediate\Build\Win64\UnrealEditor\Development\DarkMazeCore\Log.cpp.obj"
+"D:\Documentos\DEV\LozGamez\DarkMaze\DarkMaze\Intermediate\Build\Win64\UnrealEditor\Development\DarkMazeCore\Default.rc2.res"
+/OUT:"D:\Documentos\DEV\LozGamez\DarkMaze\DarkMaze\Intermediate\Build\Win64\UnrealEditor\Development\DarkMazeCore\UnrealEditor-DarkMazeCore.lib"
