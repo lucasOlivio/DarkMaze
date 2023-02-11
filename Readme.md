@@ -1,4 +1,5 @@
-# ![DARK MAZE](https://github.com/lucasOlivio/DarkMaze/blob/main/Docs/Images/tittle.png?raw=true)
+<!-- markdownlint-disable MD033 -->
+# <img src="hhttps://github.com/lucasOlivio/DarkMaze/blob/main/Docs/Images/tittle.png?raw=true" width="1755" height="360">
 
  ---
 
