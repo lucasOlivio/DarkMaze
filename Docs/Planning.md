@@ -20,9 +20,9 @@ Eventually the player will find the treasure, but as soon as he reaches it the p
 ### Details
 
 - **Genre:** puzzle exploration, horror.
-- **Graphics:** 3D Top-down.
-- **Engine:** Unreal 5.1.
-- **Programming language:**
+- **Graphics:** 2D Top-down.
+- **Engine:** Godot 3.5.1.
+- **Programming language:** GDScript, C++
 
 #### Heroes and villains
 

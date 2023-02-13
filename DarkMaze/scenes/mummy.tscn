@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/mummy/Walk1.png" type="Texture" id=1]
+[ext_resource path="res://assets/mummy/Walk2.png" type="Texture" id=2]
+[ext_resource path="res://assets/mummy/Walk3.png" type="Texture" id=3]
+[ext_resource path="res://assets/mummy/Iddle.png" type="Texture" id=4]
+[ext_resource path="res://assets/mummy/Walk4.png" type="Texture" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Iddle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Walking",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 15, 13 )
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Iddle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 0, -4 )
+shape = SubResource( 2 )

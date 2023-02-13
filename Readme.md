@@ -9,14 +9,16 @@ Be aware! Don't go too fast or you might find out why nobody ever came out of th
 
 ## About the game
 
-The evolution of Dark Cave, but now with graphics! This game was made with the pourpose of learning more about C++ and Unreal.
-It was all written in C++ even basic stuff that could be accomplished using blueprints, not for been the better approach but for the sake of learning all the features and possibilities inside Unreal.
+The evolution of Dark Cave, but now with graphics! This game was made with the pourpose of learning more about C++ and other game engines in general.
+It was all written in GDScript and C++, the original idea was to write it all in C++, but as I researched a little more I realised that was a task too much, that would endup takong too long and defeating the whole purpose of the project, which is to learn more about C++ and also where it can better fit with the game engines.
+The idea now is to develop it all with Godot and use the best features and tools it has to offer and then port what I can and what makes sense to C++.
 
 [DEMO]
 
 ### Technologies
 
-- Unreal 5.1
+- Godot 3.5.1
+- GDScript
 - Microsoft Visual C++ 14.31
 
 ### Setup
