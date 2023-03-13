@@ -35,7 +35,12 @@ Our hero is a renowned tresure hunter, trying to find the biggest treasure of al
 - **Mummy:** The basic monster in the maze, its very slow but if you are inattentive it will catch you. When the mummy spots the player it will follow him for a short while then come back to the respawn.
 
 - **Pharao:** The big boss. Will relentless chase the player, its only motivation is to get revenge for the lost treasure. Its not as fast as the player but is faster than the mummies, so the player must hurry to leave and be careful to not get cornered.
-    - **Problem:** Finding the best(fastest) path to the player (constantly moving) in a static maze.
+  - **Problem:** Finding the best(fastest) path to the player (constantly moving) in a static maze.
+    - **Initial states:** The player will always be right in front of the Pharao initially, since the treasure must always be placed in front of it and the Pharao will only wake up (start moving) when the treasure is collected.
+    - **Actions:** The Pharao is limited to go up/down/right/left, but can't go through walls.
+    - **Transition model:** The pharao must play its groaning sound and its walking animation whenever its moving. When the player dies the pharao must stop.
+    - **Goal state:** Reach the player before he gets to the exit.
+    - **Action cost:** Each cell costs 1.
 
 #### The maze
 
@@ -49,3 +54,5 @@ The maze is 32x32 tiles size for the easy level, 48x48 for the medium level and 
 - Sounds:
   - Menu background: [Pixabaya](https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=16883)
   - Mummy: [Pixabaya](https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=102585)
+  - Player walking: [Pixabaya](https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6404)
+  - Ambient and torch: [Pixabaya](https://pixabay.com/sound-effects//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=123930)

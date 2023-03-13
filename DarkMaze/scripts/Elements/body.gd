@@ -10,11 +10,17 @@ var _direction : Vector2
 var _speed : int
 var _target_tile : Vector2
 var _is_moving : bool
+var _walking_sound : Node2D = null
+var _walking_animation : Node2D = null
 
 func _init(speed_: int = 0):
 	_direction = Vector2()
 	_speed = speed_
 	_is_moving = false
+
+func _ready():
+	_walking_sound = get_node("AudioStreamPlayer2D")
+	_walking_animation = get_node("AnimatedSprite")
 
 func _move_to_tile():
 	# Moves the Body to a new tile based on the velocity.
@@ -31,18 +37,27 @@ func _move():
 	if _direction:
 		look_at(_target_tile)
 		_move_to_tile()
-		$AnimatedSprite.play("Walking")
+		if _walking_animation:
+			_walking_animation.play("Walking")
+		if _walking_sound and !_walking_sound.playing: 
+			_walking_sound.play()
 	else:
-		$AnimatedSprite.play("Iddle")
+		if _walking_animation:
+			_walking_animation.play("Iddle")
+		if _walking_sound: 
+			_walking_sound.stop()
 
 func _physics_process(delta):
 	_move()
 
+func is_moving() -> bool:
+	return _is_moving
+
 func test_wall(move_vector: Vector2) -> bool:
 	# Check if the movement will hit a wall
 	var target = global_position + move_vector
-	var raycast_check = get_world_2d().direct_space_state\
-		.intersect_ray(global_position, target, [self], collision_mask)
+	var space_state = get_world_2d().direct_space_state
+	var raycast_check = space_state.intersect_ray(global_position, target, [self], collision_mask)
 	return raycast_check and raycast_check.collider.name == "TileWall"
 
 func set_direction(direction_):
