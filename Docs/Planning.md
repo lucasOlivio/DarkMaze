@@ -28,14 +28,24 @@ Eventually the player will find the treasure, but as soon as he reaches it the p
 
 ##### Hero
 
-Our hero is a renowned tresure hunter, trying to find the biggest treasure of all. The only things he has are a torch and courage, his only actions are moving around and hoping to find the treasure soon enough.
+Our hero is a renowned tresure hunter, trying to find the biggest treasure of all. The only things he has are a torch and courage, his only actions are moving up/down/right/left and hoping to find the treasure without touching any mummy, then after finding the treasure he must leave the maze by the same path he came and this time faster, because the Pharao will be chasing him all the time.
 
 ##### Villains
 
 - **Mummy:** The basic monster in the maze, its very slow but if you are inattentive it will catch you. When the mummy spots the player it will follow him for a short while then come back to the respawn.
 
 - **Pharao:** The big boss. Will relentless chase the player, its only motivation is to get revenge for the lost treasure. Its not as fast as the player but is faster than the mummies, so the player must hurry to leave and be careful to not get cornered.
+    - **Problem:** Finding the best(fastest) path to the player (constantly moving) in a static maze.
 
 #### The maze
 
-The maze is auto-generated, must be about 32x32 tiles.
+The maze is 32x32 tiles size for the easy level, 48x48 for the medium level and 64x64 for the hard level.
+
+### Credits
+
+- Images:
+  - Menu background: [Pixelweentomb](https://pixeljoint.com/files/icons/full/pixelweentomb.png)
+
+- Sounds:
+  - Menu background: [Pixabaya](https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=16883)
+  - Mummy: [Pixabaya](https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=102585)

@@ -9,32 +9,61 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "TileMap",
+"class": "AStarPath",
+"language": "GDScript",
+"path": "res://scripts/Levels/astar_path.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "Body",
 "language": "GDScript",
-"path": "res://scripts/body.gd"
+"path": "res://scripts/Elements/body.gd"
 }, {
 "base": "Body",
 "class": "Mummy",
 "language": "GDScript",
-"path": "res://scripts/mummy.gd"
+"path": "res://scripts/Elements/mummy.gd"
+}, {
+"base": "Body",
+"class": "Pharao",
+"language": "GDScript",
+"path": "res://scripts/Elements/pharao.gd"
 }, {
 "base": "Body",
 "class": "Player",
 "language": "GDScript",
-"path": "res://scripts/player.gd"
+"path": "res://scripts/Elements/player.gd"
 } ]
 _global_script_class_icons={
+"AStarPath": "",
 "Body": "",
 "Mummy": "",
+"Pharao": "",
 "Player": ""
 }
 
 [application]
 
 config/name="DarkMaze"
-run/main_scene="res://scenes/main.tscn"
+run/main_scene="res://scenes/Menus/menu.tscn"
 config/icon="res://icon.png"
+
+[audio]
+
+default_bus_layout="res://assets/sounds/default_bus_layout.tres"
+channel_disable_threshold_db=100000.0
+
+[autoload]
+
+SceneTransition="*res://scenes/Menus/scene_transition.tscn"
+
+[display]
+
+window/size/resizable=false
+
+[global]
+
+default=false
 
 [gui]
 
@@ -45,21 +74,25 @@ common/drop_mouse_on_gui_input_disabled=true
 up={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":87,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":16777232,"unicode":0,"echo":false,"script":null)
  ]
 }
 down={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":83,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":16777234,"unicode":0,"echo":false,"script":null)
  ]
 }
 left={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":65,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":16777231,"unicode":0,"echo":false,"script":null)
  ]
 }
 right={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":68,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":16777233,"unicode":0,"echo":false,"script":null)
  ]
 }
 
@@ -69,4 +102,5 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+environment/default_clear_color=Color( 0.0784314, 0.0627451, 0.0627451, 1 )
 environment/default_environment="res://default_env.tres"
