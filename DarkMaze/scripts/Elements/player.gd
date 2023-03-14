@@ -2,14 +2,15 @@ extends Body
 
 class_name Player
 
-# Movement
-var speed_ : int = 100
-
 # Player state
 var _dead = false
+var _chest = false setget active_chest, is_active_chest
 
-func _init().(speed_):
-	pass
+func active_chest(is_active = false):
+	_chest = is_active
+
+func is_active_chest():
+	return _chest
 
 func read_input(Input) -> void:
 	if Input.is_action_pressed("up"):
@@ -23,14 +24,15 @@ func read_input(Input) -> void:
 
 func die():
 	var collision_shape = $CollisionShape2D
+	var controls = load("res://scenes/Menus/game_over.tscn").instance()
 	# remove the CollisionShape2D node from the scene tree
 	collision_shape.queue_free()
 	_dead = true
-	get_tree().reload_current_scene()
+	get_parent().add_child(controls)
 
 func is_dead():
 	return _dead
 
 func _physics_process(_delta):
-	if is_dead(): return
+	if is_dead() or is_active_chest(): return
 	read_input(Input)

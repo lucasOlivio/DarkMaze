@@ -4,23 +4,25 @@ class_name Body
 
 # Game settings
 var TILE_SIZE = 32
+var level : Node
 
 # Movement
+export var speed : int =  75
 var _direction : Vector2
-var _speed : int
 var _target_tile : Vector2
 var _is_moving : bool
 var _walking_sound : Node2D = null
 var _walking_animation : Node2D = null
+var _on_timer : bool = false
 
-func _init(speed_: int = 0):
+func _init():
 	_direction = Vector2()
-	_speed = speed_
 	_is_moving = false
 
 func _ready():
 	_walking_sound = get_node("AudioStreamPlayer2D")
 	_walking_animation = get_node("AnimatedSprite")
+	level = get_parent()
 
 func _move_to_tile():
 	# Moves the Body to a new tile based on the velocity.
@@ -31,9 +33,13 @@ func _move_to_tile():
 		_direction = Vector2.ZERO
 	else:
 		_is_moving = true
-		move_and_slide(_direction * _speed)
+		move_and_slide(_direction * speed)
 
 func _move():
+	if _on_timer:
+		# In case is needed to wait before walking or running the iddle animations
+		return
+
 	if _direction:
 		look_at(_target_tile)
 		_move_to_tile()
@@ -58,7 +64,7 @@ func test_wall(move_vector: Vector2) -> bool:
 	var target = global_position + move_vector
 	var space_state = get_world_2d().direct_space_state
 	var raycast_check = space_state.intersect_ray(global_position, target, [self], collision_mask)
-	return raycast_check and raycast_check.collider.name == "TileWall"
+	return raycast_check and (raycast_check.collider.name == "TileWall" or raycast_check.collider.name == "Gate")
 
 func set_direction(direction_):
 	if _is_moving or test_wall(direction_ * TILE_SIZE):

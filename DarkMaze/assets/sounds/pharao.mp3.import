@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pharao.mp3-91c5d8891af0f45bbceeabb6ee919eb3.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/pharao.mp3"
+dest_files=[ "res://.import/pharao.mp3-91c5d8891af0f45bbceeabb6ee919eb3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

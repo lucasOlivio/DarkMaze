@@ -56,3 +56,5 @@ The maze is 32x32 tiles size for the easy level, 48x48 for the medium level and 
   - Mummy: [Pixabaya](https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=102585)
   - Player walking: [Pixabaya](https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6404)
   - Ambient and torch: [Pixabaya](https://pixabay.com/sound-effects//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=123930)
+  - Pharao sound and steps: [Pixabaya](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6172) [Pixabaya](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=39193)
+  - Chest sound: [Pixabaya](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=37191)
