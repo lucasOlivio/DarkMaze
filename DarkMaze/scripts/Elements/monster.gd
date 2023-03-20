@@ -10,8 +10,8 @@ var _path : PoolVector2Array = []
 
 
 func _ready():
-	target = get_parent().get_node("Player") # Set the target to the Player node
-	tilefloor = get_parent().get_node("TileFloor")
+	target = owner.get_node("Player") # Set the target to the Player node
+	tilefloor = owner.get_node("TileFloor")
 	_update_path()
 
 func _follow_player():

@@ -3,14 +3,14 @@ extends Body
 class_name Player
 
 # Player state
-var _dead = false
-var _chest = false setget active_chest, is_active_chest
+enum states {LIVE, DEAD, COLLECTING_TREASURE, WIN}
+var player_state : int
 
-func active_chest(is_active = false):
-	_chest = is_active
+var game_over : Node = null
 
-func is_active_chest():
-	return _chest
+func _ready():
+	player_state = states.LIVE
+	game_over = get_parent().get_node("GameOver")
 
 func read_input(Input) -> void:
 	if Input.is_action_pressed("up"):
@@ -23,16 +23,11 @@ func read_input(Input) -> void:
 		set_direction(Vector2.RIGHT)
 
 func die():
-	var collision_shape = $CollisionShape2D
-	var controls = load("res://scenes/Menus/game_over.tscn").instance()
+	player_state = states.DEAD
+	game_over.visible = true
 	# remove the CollisionShape2D node from the scene tree
-	collision_shape.queue_free()
-	_dead = true
-	get_parent().add_child(controls)
-
-func is_dead():
-	return _dead
+	$CollisionShape2D.queue_free()
 
 func _physics_process(_delta):
-	if is_dead() or is_active_chest(): return
+	if player_state != states.LIVE: return
 	read_input(Input)

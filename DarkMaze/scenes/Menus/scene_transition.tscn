@@ -4,7 +4,7 @@
 
 [sub_resource type="Animation" id=2]
 resource_name = "Dissolve"
-length = 0.5
+length = 1.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("DissolveRect:modulate")
 tracks/0/interp = 1
@@ -12,7 +12,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
+"times": PoolRealArray( 0, 1.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
@@ -35,6 +35,8 @@ tracks/0/keys = {
 }
 
 [node name="scene_transition" type="CanvasLayer"]
+pause_mode = 2
+layer = 10
 script = ExtResource( 1 )
 
 [node name="DissolveRect" type="ColorRect" parent="."]

@@ -5,9 +5,9 @@
 [ext_resource path="res://assets/sounds/chest.mp3" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 14, 30 )
+extents = Vector2( 14, 22.5 )
 
-[node name="RigidBody2D" type="Sprite"]
+[node name="Chest" type="Sprite"]
 use_parent_material = true
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
@@ -15,7 +15,7 @@ script = ExtResource( 2 )
 [node name="PickupArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PickupArea"]
-position = Vector2( 0, -16 )
+position = Vector2( 0, -8.5 )
 shape = SubResource( 1 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]

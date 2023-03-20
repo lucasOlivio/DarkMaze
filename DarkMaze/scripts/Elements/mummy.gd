@@ -36,9 +36,3 @@ func _physics_process(_delta):
 		return
 	
 	_sight_check()
-	
-	if not _active or _is_moving:
-		return
-
-	_update_path()
-	_follow_player()

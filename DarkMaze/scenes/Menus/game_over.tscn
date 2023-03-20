@@ -14,7 +14,7 @@ font_data = ExtResource( 3 )
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[node name="Control" type="CanvasLayer"]
+[node name="GameOver" type="CanvasLayer"]
 pause_mode = 2
 script = ExtResource( 1 )
 
@@ -65,8 +65,7 @@ text = "Quit"
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
-volume_db = 1.0
-autoplay = true
+volume_db = 3.0
 
 [connection signal="pressed" from="VBoxContainer/RestartButton" to="." method="_on_RestartButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/MenuButton" to="." method="_on_MenuButton_pressed"]
