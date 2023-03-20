@@ -32,4 +32,4 @@ Contributions to the game are always welcome. If you find any issues or have any
 
 ### License
 
-This game is licensed under the [MIT LICENSE](https://img.shields.io/github/license/lucasOlivio/DarkMaze). You are free to use, modify, and distribute the game as per the terms of the license.
+This game is licensed under the [MIT LICENSE](https://github.com/lucasOlivio/DarkMaze/blob/main/LICENSE). You are free to use, modify, and distribute the game as per the terms of the license.
