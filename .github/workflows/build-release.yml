@@ -1,10 +1,12 @@
 name: Build and release
 
-# Whenever a tag push matching pattern "v*" then run the job
-on: 
-  push:
-    tags:
-      - "v*"
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Application version'
+        required: true
+        default: '1.0'
 
 jobs:
   # job id, can be anything
@@ -38,5 +40,5 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         generateReleaseNotes: true
-        tag: ${{ github.ref_name }}
+        tag: v${{ github.event.inputs.version }}
         artifacts: ${{ steps.export.outputs.archive_directory }}/*
