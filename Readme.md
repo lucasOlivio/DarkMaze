@@ -24,11 +24,16 @@ This repository contains all the necessary files required to run the game on you
 
 ### Running the Game
 
-To run the game, select the Play button from the top of the Godot Engine editor. The game will open in a new window and you can start playing the game.
+To run the game in development, select the Play button from the top of the Godot Engine editor. The game will open in a new window and you can start playing the game.
+To test the game you can download the "Windows.Desktop.zip" in the releases and run the .exe
 
-### Contributing
+## Screenshots
 
-Contributions to the game are always welcome. If you find any issues or have any suggestions for improvement, feel free to open an issue or submit a pull request.
+![StartGame](https://github.com/lucasOlivio/LeapUp/blob/Docs/main_menu.png)
+![Tutorial](https://github.com/lucasOlivio/LeapUp/blob/Docs/Tutorial.png)
+![Initial](https://github.com/lucasOlivio/LeapUp/blob/Docs/Initial.png)
+![Mummy](https://github.com/lucasOlivio/LeapUp/blob/Docs/Mummy.png)
+![Pharao](https://github.com/lucasOlivio/LeapUp/blob/Docs/Pharao.png)
 
 ### License
 

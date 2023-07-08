@@ -91,7 +91,6 @@ text = "DARK MAZE"
 position = Vector2( 112, 128 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 2 )
-frame = 2
 playing = true
 
 [node name="Torch2" type="AnimatedSprite" parent="."]
@@ -99,7 +98,6 @@ position = Vector2( 928, 128 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 2 )
 animation = "default invertido"
-frame = 2
 playing = true
 flip_h = true
 
