@@ -75,3 +75,4 @@ mono_crash.*.json
 
 PossibleSprites/
 vars.bat
+*.pck
