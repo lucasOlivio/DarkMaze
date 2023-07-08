@@ -29,11 +29,11 @@ To test the game you can download the "Windows.Desktop.zip" in the releases and 
 
 ## Screenshots
 
-![StartGame](https://github.com/lucasOlivio/LeapUp/blob/Docs/main_menu.png)
-![Tutorial](https://github.com/lucasOlivio/LeapUp/blob/Docs/Tutorial.png)
-![Initial](https://github.com/lucasOlivio/LeapUp/blob/Docs/Initial.png)
-![Mummy](https://github.com/lucasOlivio/LeapUp/blob/Docs/Mummy.png)
-![Pharao](https://github.com/lucasOlivio/LeapUp/blob/Docs/Pharao.png)
+![StartGame](https://github.com/lucasOlivio/DarkMaze/blob/main/Docs/Images/main_menu.png)
+![Tutorial](https://github.com/lucasOlivio/DarkMaze/blob/main/Docs/Images/Tutorial.png)
+![Initial](https://github.com/lucasOlivio/DarkMaze/blob/main/Docs/Images/Initial.png)
+![Mummy](https://github.com/lucasOlivio/DarkMaze/blob/main/Docs/Images/Mummy.png)
+![Pharao](https://github.com/lucasOlivio/DarkMaze/blob/main/Docs/Images/Pharao.png)
 
 ### License
 
